@@ -2,7 +2,7 @@
 .vs/
 
 # JetBrains Rider user specific files
-*.idea/
+.idea/*
 
 # Compiled Object files
 *.slo
