@@ -76,3 +76,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Ignore local user config file for build script
+_RebuildProjectHere/build_config.txt
