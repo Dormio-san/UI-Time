@@ -10,8 +10,8 @@ REM For loop to find .uproject file in the parent directory
 for %%f in ("%PARENT_DIR%\*.uproject") do set "PROJECT_PATH=%%f"
 
 REM Default UE path
-set "UE_PATH=C:\Program Files\Epic Games\UE_5.6"
-set "UE_Build_Path=\Engine\Build\BatchFiles\Build.bat"
+set "UE_PATH=S:\UnrealEngine"
+set "UE_Build_Path=\UE_5.7\Engine\Build\BatchFiles\Build.bat"
 
 REM Load saved paths if a save file exists
 if exist build_config.txt (
@@ -53,7 +53,7 @@ exit /b
 REM Subroutine for having user input valid .uproject path
 :InputProject_Path
 echo Project path "%PROJECT_PATH%" invalid or not found.
-echo Please enter path to UI_Time.uproject file (Ex: C:\GitHub\GantRouge\UI_Time.uproject)
+echo Please enter path to UI_Time.uproject file (Ex: "S:\GitHub\UI-Time\UI_Time.uproject")
 echo Use right click to paste 
 echo.
 set /p PROJECT_PATH="Enter path to UI_Time.uproject: "
@@ -75,10 +75,10 @@ if exist "%PROJECT_PATH%" (
 REM Subroutine for having user input valid UE path
 :InputUE_Path
 echo Unreal Engine path "%UE_PATH%" invalid or not found.
-echo Please enter path to UE version folder (Ex: C:\Epic Games\UE_5.6)
+echo Please enter path to parent directory of UE version folder (Ex: C:\Epic Games)
 echo Use right click to paste
 echo.
-set /p UE_PATH="Enter path to Unreal Engine installation: "
+set /p UE_PATH="Enter path to parent directory of Unreal Engine installation: "
 
 REM Validate input path
 if exist "%UE_PATH%%UE_Build_Path%" (
