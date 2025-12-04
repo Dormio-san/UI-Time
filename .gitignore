@@ -78,4 +78,4 @@ Plugins/**/Intermediate/*
 DerivedDataCache/*
 
 # Ignore local user config file for build script
-_RebuildProjectHere/build_config.txt
+BuildNoIDE/build_config.txt
