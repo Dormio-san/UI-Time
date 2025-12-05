@@ -44,8 +44,8 @@
     InputIconMap.Add(FName(TEXT("DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Arrow_Down_Key_Dark.Arrow_Down_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("LEFT SHIFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Shift_Key_Dark.Shift_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("RIGHT SHIFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Shift_Key_Dark.Shift_Key_Dark"))));
-    InputIconMap.Add(FName(TEXT("LEFT CTRL")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Control_Key_Dark.Control_Key_Dark"))));
-    InputIconMap.Add(FName(TEXT("RIGHT CTRL")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Control_Key_Dark.Control_Key_Dark"))));
+    InputIconMap.Add(FName(TEXT("LEFT CTRL")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Ctrl_Key_Dark.Ctrl_Key_Dark"))));
+    InputIconMap.Add(FName(TEXT("RIGHT CTRL")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Ctrl_Key_Dark.Ctrl_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("LEFT ALT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Alt_Key_Dark.Alt_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("RIGHT ALT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Alt_Key_Dark.Alt_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("ESCAPE")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Esc_Key_Dark.Esc_Key_Dark"))));
@@ -54,13 +54,11 @@
     InputIconMap.Add(FName(TEXT("HOME")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Home_Key_Dark.Home_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("INSERT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Insert_Key_Dark.Insert_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("END")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/End_Key_Dark.End_Key_Dark"))));
-    InputIconMap.Add(FName(TEXT("BACKSPACE")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Backspace_Alt_Key_Dark.Backspace_Alt_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("LEFT BRACKET")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Bracket_Left_Key_Dark.Bracket_Left_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("RIGHT BRACKET")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Bracket_Right_Key_Dark.Bracket_Right_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("CAPS LOCK")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Caps_Lock_Key_Dark.Caps_Lock_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("COMMA")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Comma_Key_Dark.Comma_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("DELETE")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Del_Key_Dark.Del_Key_Dark"))));
-    InputIconMap.Add(FName(TEXT("ENTER")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Enter_Tall_Key_Dark.Enter_Tall_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("EQUALS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Equals_Key_Dark.Equals_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("F1")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/F1_Key_Dark.F1_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("F2")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/F2_Key_Dark.F2_Key_Dark"))));
@@ -83,7 +81,6 @@
     InputIconMap.Add(FName(TEXT("PERIOD")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Period_Key_Dark.Period_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("APOSTROPHE")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Quote_Key_Dark.Quote_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("SEMICOLON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Semicolon_Key_Dark.Semicolon_Key_Dark"))));
-    InputIconMap.Add(FName(TEXT("LEFT SHIFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Shift_Alt_Key_Dark.Shift_Alt_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("SLASH")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Ford_Slash_Key_Dark.Ford_Slash_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("BACKSLASH")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Back_Slash_Key_Dark.Back_Slash_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD FACE BUTTON BOTTOM")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_A.XboxSeriesX_A"))));
@@ -102,4 +99,4 @@
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHTSTICK")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick_Click.XboxSeriesX_Right_Stick_Click"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_View.XboxSeriesX_View"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Menu.XboxSeriesX_Menu"))));
-    InputIconMap.Add(FName(TEXT("GAMEPAD START")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Start.XboxSeriesX_Start"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD START")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Share.XboxSeriesX_Share"))));

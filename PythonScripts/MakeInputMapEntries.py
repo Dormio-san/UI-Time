@@ -133,7 +133,7 @@ def generate_gamepad_entries():
         "GAMEPAD START": "XboxSeriesX_Share",
     }
     
-    for map_key, asset_name in face_buttons.items():
+    for map_key, asset_name in gamepad_inputs.items():
         path = f'{GAMEPAD_PATH}{asset_name}.{asset_name}'
         entries.append(f'    InputIconMap.Add(FName(TEXT("{map_key}")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("{path}"))));')
     
@@ -142,17 +142,17 @@ def generate_gamepad_entries():
 def main():
     all_entries = []
     
-    print("Generating keyboard entries (UPPERCASE keys)...")
+    print("Generating keyboard entries...")
     all_entries.extend(generate_keyboard_entries())
     
-    print("Generating gamepad entries (UPPERCASE keys)...")
+    print("Generating gamepad entries...")
     all_entries.extend(generate_gamepad_entries())
     
     # Write to file
     with open(OUTPUT_FILE, 'w') as f:
         f.writelines(line + '\n' for line in all_entries)
     
-    print(f"✅ Generated {len(all_entries)} UPPERCASE key entries → {OUTPUT_FILE}")
+    print(f"✅ Generated {len(all_entries)} key entries at → {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
