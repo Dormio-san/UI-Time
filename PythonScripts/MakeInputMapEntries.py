@@ -28,7 +28,7 @@ def generate_keyboard_entries():
         map_key = str(i).upper()
         asset_name = f"{map_key}_Key_Dark"
         path = f'{KBM_PATH}{asset_name}.{asset_name}'
-        entries.append(f'    InputIconMap.Add(FName(TEXT("{map_key}")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("{path}"))));')
+        entries.append(f'    InputIconMap.Add(FName(TEXT("Num {map_key}")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("{path}"))));')
         print(f"Num {map_key}: {asset_name}")
     
     # Letters A-Z
@@ -156,7 +156,9 @@ def generate_gamepad_entries():
         "GAMEPAD SPECIAL LEFT": "XboxSeriesX_View",
         "GAMEPAD SPECIAL RIGHT": "XboxSeriesX_Menu",
         "GAMEPAD LEFT THUMBSTICK BUTTON": "XboxSeriesX_Left_Stick_Click",
+        "GAMEPAD LEFT THUMBSTICK DOWN": "XboxSeriesX_Left_Stick_Click",
         "GAMEPAD RIGHT THUMBSTICK BUTTON": "XboxSeriesX_Right_Stick_Click",
+        "GAMEPAD RIGHT THUMBSTICK DOWN": "XboxSeriesX_Right_Stick_Click",
         "GAMEPAD LEFT THUMBSTICK X-AXIS": "XboxSeriesX_Left_Stick",
         "GAMEPAD LEFT THUMBSTICK Y-AXIS": "XboxSeriesX_Left_Stick",
         "GAMEPAD LEFT THUMBSTICK 2D-AXIS": "XboxSeriesX_Left_Stick",
