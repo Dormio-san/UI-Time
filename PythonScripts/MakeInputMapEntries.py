@@ -26,10 +26,11 @@ def generate_keyboard_entries():
     # Numpad numbers 0-9
     for i in range(10):
         map_key = str(i).upper()
+        num_map_key = f"Num {map_key}"
         asset_name = f"{map_key}_Key_Dark"
         path = f'{KBM_PATH}{asset_name}.{asset_name}'
-        entries.append(f'    InputIconMap.Add(FName(TEXT("Num {map_key}")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("{path}"))));')
-        print(f"Num {map_key}: {asset_name}")
+        entries.append(f'    InputIconMap.Add(FName(TEXT("{num_map_key}")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("{path}"))));')
+        print(f"{num_map_key}: {asset_name}")
     
     # Letters A-Z
     for c in range(ord('A'), ord('Z')+1):
@@ -180,14 +181,14 @@ def main():
     print("Generating keyboard entries...")
     all_entries.extend(generate_keyboard_entries())
     
-    print("Generating gamepad entries...")
+    print("\nGenerating gamepad entries...")
     all_entries.extend(generate_gamepad_entries())
     
     # Write to file
     with open(OUTPUT_FILE, 'w') as f:
         f.writelines(line + '\n' for line in all_entries)
     
-    print(f"✅ Generated {len(all_entries)} key entries at → {OUTPUT_FILE}")
+    print(f"\n✅ Generated {len(all_entries)} key entries at → {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
