@@ -1,12 +1,4 @@
-// Currently nothing
-
-
-#include "UI_GameInstance.h"
-#include "Engine/Texture2D.h"
-
-UUI_GameInstance::UUI_GameInstance()
-{
-	InputIconMap.Add(FName(TEXT("0")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/0_Key_Dark.0_Key_Dark"))));
+    InputIconMap.Add(FName(TEXT("0")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/0_Key_Dark.0_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("1")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/1_Key_Dark.1_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("2")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/2_Key_Dark.2_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("3")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/3_Key_Dark.3_Key_Dark"))));
@@ -111,52 +103,3 @@ UUI_GameInstance::UUI_GameInstance()
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_View.XboxSeriesX_View"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Menu.XboxSeriesX_Menu"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD START")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Start.XboxSeriesX_Start"))));
-
-}
-
-void UUI_GameInstance::Init()
-{
-	// Call base implementation
-	Super::Init();
-
-	// Call the blueprint event
-	Init_BP();
-}
-
-void UUI_GameInstance::Shutdown()
-{
-	// Call the blueprint event
-	Shutdown_BP();
-
-	// Call base implementation
-	Super::Shutdown();
-}
-
-FName UUI_GameInstance::MakeInputIconKey(const FText& KeyDisplayName) const
-{
-    FString KeyString = KeyDisplayName.ToString();
-
-    // Remove whitespace
-    KeyString.TrimStartAndEndInline();
-
-    // Make key string all uppercase to prevent case sensitivity issues
-    KeyString = KeyString.ToUpper();
-
-    return FName(*KeyString);
-}
-
-UTexture2D* UUI_GameInstance::GetInputIconTexture(const FText& KeyDisplayName) const
-{
-    const FName Key = MakeInputIconKey(KeyDisplayName);
-
-    const TSoftObjectPtr<UTexture2D>* IconTexture = InputIconMap.Find(Key);
-    if (!IconTexture)
-    {
-        UE_LOG(LogTemp, Warning, TEXT("No input icon found for key '%s'"), *Key.ToString());
-        return nullptr;
-    }
-
-    // Load the texture synchronously if not already loaded
-	// Change to async or adjust how it loads if performance issues arise
-    return IconTexture->LoadSynchronous();
-}
