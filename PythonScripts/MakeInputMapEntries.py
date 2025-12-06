@@ -157,15 +157,21 @@ def generate_gamepad_entries():
         "GAMEPAD SPECIAL LEFT": "XboxSeriesX_View",
         "GAMEPAD SPECIAL RIGHT": "XboxSeriesX_Menu",
         "GAMEPAD LEFT THUMBSTICK BUTTON": "XboxSeriesX_Left_Stick_Click",
-        "GAMEPAD LEFT THUMBSTICK DOWN": "XboxSeriesX_Left_Stick_Click",
         "GAMEPAD RIGHT THUMBSTICK BUTTON": "XboxSeriesX_Right_Stick_Click",
-        "GAMEPAD RIGHT THUMBSTICK DOWN": "XboxSeriesX_Right_Stick_Click",
         "GAMEPAD LEFT THUMBSTICK X-AXIS": "XboxSeriesX_Left_Stick",
         "GAMEPAD LEFT THUMBSTICK Y-AXIS": "XboxSeriesX_Left_Stick",
         "GAMEPAD LEFT THUMBSTICK 2D-AXIS": "XboxSeriesX_Left_Stick",
+        "GAMEPAD LEFT THUMBSTICK UP": "XboxSeriesX_Left_Stick",
+        "GAMEPAD LEFT THUMBSTICK DOWN": "XboxSeriesX_Left_Stick",
+        "GAMEPAD LEFT THUMBSTICK LEFT": "XboxSeriesX_Left_Stick",
+        "GAMEPAD LEFT THUMBSTICK RIGHT": "XboxSeriesX_Left_Stick",
         "GAMEPAD RIGHT THUMBSTICK X-AXIS": "XboxSeriesX_Right_Stick",
         "GAMEPAD RIGHT THUMBSTICK Y-AXIS": "XboxSeriesX_Right_Stick",
         "GAMEPAD RIGHT THUMBSTICK 2D-AXIS": "XboxSeriesX_Right_Stick",
+        "GAMEPAD RIGHT THUMBSTICK UP": "XboxSeriesX_Right_Stick",
+        "GAMEPAD RIGHT THUMBSTICK DOWN": "XboxSeriesX_Right_Stick",
+        "GAMEPAD RIGHT THUMBSTICK LEFT": "XboxSeriesX_Right_Stick",
+        "GAMEPAD RIGHT THUMBSTICK RIGHT": "XboxSeriesX_Right_Stick"
     }
     
     for map_key, asset_name in gamepad_inputs.items():
