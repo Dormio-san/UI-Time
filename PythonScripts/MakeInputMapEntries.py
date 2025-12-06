@@ -113,6 +113,8 @@ def generate_keyboard_entries():
         "LEFT MOUSE BUTTON": "Mouse_Left_Key_Dark",
         "MIDDLE MOUSE BUTTON": "Mouse_Middle_Key_Dark",
         "RIGHT MOUSE BUTTON": "Mouse_Right_Key_Dark",
+        "MOUSE WHEEL UP": "Mouse_Wheel_Up_Key_Dark",
+        "MOUSE WHEEL DOWN": "Mouse_Wheel_Down_Key_Dark",
         "PAGE DOWN": "Page_Down_Key_Dark",
         "PAGE UP": "Page_Up_Key_Dark",
         "PERIOD": "Period_Key_Dark",

@@ -94,6 +94,8 @@ UUI_GameInstance::UUI_GameInstance()
     InputIconMap.Add(FName(TEXT("LEFT MOUSE BUTTON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Mouse_Left_Key_Dark.Mouse_Left_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("MIDDLE MOUSE BUTTON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Mouse_Middle_Key_Dark.Mouse_Middle_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("RIGHT MOUSE BUTTON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Mouse_Right_Key_Dark.Mouse_Right_Key_Dark"))));
+    InputIconMap.Add(FName(TEXT("MOUSE WHEEL UP")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Mouse_Wheel_Up_Key_Dark.Mouse_Wheel_Up_Key_Dark"))));
+    InputIconMap.Add(FName(TEXT("MOUSE WHEEL DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Mouse_Wheel_Down_Key_Dark.Mouse_Wheel_Down_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("PAGE DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Page_Down_Key_Dark.Page_Down_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("PAGE UP")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Page_Up_Key_Dark.Page_Up_Key_Dark"))));
     InputIconMap.Add(FName(TEXT("PERIOD")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/KBM/Dark/Period_Key_Dark.Period_Key_Dark"))));
@@ -139,6 +141,7 @@ UUI_GameInstance::UUI_GameInstance()
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
+
 }
 
 void UUI_GameInstance::Init()
