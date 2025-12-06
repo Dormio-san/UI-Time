@@ -124,15 +124,21 @@ UUI_GameInstance::UUI_GameInstance()
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_View.XboxSeriesX_View"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD SPECIAL RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Menu.XboxSeriesX_Menu"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK BUTTON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick_Click.XboxSeriesX_Left_Stick_Click"))));
-    InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick_Click.XboxSeriesX_Left_Stick_Click"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK BUTTON")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick_Click.XboxSeriesX_Right_Stick_Click"))));
-    InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick_Click.XboxSeriesX_Right_Stick_Click"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK X-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK Y-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK 2D-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK UP")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD LEFT THUMBSTICK RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Left_Stick.XboxSeriesX_Left_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK X-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK Y-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
     InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK 2D-AXIS")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK UP")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK DOWN")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK LEFT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
+    InputIconMap.Add(FName(TEXT("GAMEPAD RIGHT THUMBSTICK RIGHT")), TSoftObjectPtr<UTexture2D>(FSoftObjectPath(TEXT("/Game/Art/UI/InputIcons/Gamepad/Xbox_Series/XboxSeriesX_Right_Stick.XboxSeriesX_Right_Stick"))));
 }
 
 void UUI_GameInstance::Init()
